@@ -1,0 +1,92 @@
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+body {
+    font-family: "PT Mono";
+    width: 100%;
+    height: 100%;
+}
+
+.max {
+    height: 100%;
+}
+
+#loadingContainer {
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    top: 45px;
+    left: 15px;
+    text-align: center;
+}
+
+.bord {
+    background-color: #444444;
+    transform: translateZ(0);
+    position: absolute;
+}
+
+.bord.tp, .bord.bt {
+    width: 100%;
+    height: 75px;
+}
+
+.bord.lt, .bord.rt {
+    height: 100%;
+    width: 75px;
+}
+
+.bord.bt {
+    bottom: 0;
+}
+
+.bord.lt {
+    left: 0;
+}
+
+.bord.rt {
+    right: 0;
+}
+
+.opts:hover {
+    top: 30px;
+    opacity: 1;
+}
+
+.opts {
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    padding: 7px;
+    opacity: 0.3;
+    border-radius: 5px;
+    top: 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+#counter {
+    transform: translateZ(0);
+    pointer-events: none;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+}
+
+#map-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
